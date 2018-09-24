@@ -18,7 +18,7 @@ def resize(file):
 
     Hpixel = im.size[0]/(10)
     Wpixel = im.size[1]/(10)
-    new_file = npath2+'\\'+file_name+ext
+    new_file = npath2+'\\'+file_name+'.'+ext
     im.resize((int(Hpixel),int(Wpixel))).save(new_file, "JPEG")
     nim = Image.open(new_file)
     print ('\tresized image')
